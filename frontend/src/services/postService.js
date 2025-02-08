@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 // const API_URL = 'http://localhost:5000/posts';
-const API_URL ='https://app-one-cmcb.onrender.com/posts';
+const BASE_URL ='https://app-one-cmcb.onrender.com';
+const API_URL = `${BASE_URL}/posts`;
 
 export const postService = {
   // Get all posts
