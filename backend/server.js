@@ -33,6 +33,9 @@ const connectDB = async () => {
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+app.get('/checkhealth', (req, res) => {
+  res.send('Express server is running successfully!');
+});
 
 // Middleware
 app.use(cors());
